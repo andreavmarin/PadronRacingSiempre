@@ -36,6 +36,8 @@ body::before {
 }
 .logo{
     margin: 15px;
+    width: 150px;
+    text-align: center;
 }
 
 main{
@@ -56,9 +58,6 @@ h1{
     font-size: 45px;
     margin-bottom: 20px;
 }
-.redes{
-    margin-left: 3%;
-}
 .redes a img{
     width: 30px;
 }
@@ -66,7 +65,7 @@ h1{
 .checks{
     display: flex;
     flex-direction: column;
-    margin-right: 213px;
+    margin-right: 210px;
 }
 .check{
     display: flex;
@@ -132,9 +131,6 @@ h1{
     .redes a img{
         width: 24px;
     }
-    .redes{
-        margin-left: 4%;
-    }
     main h1{
         font-size: 35px;
     }
@@ -145,15 +141,12 @@ h1{
         margin-top: 0;
     }
     .logo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 100%;
+        margin: 70px 0 20px;
     }
-    .redes{
-        margin:0;
-    }
+
 }
-@media (max-width: 600px){
+@media (max-width: 630px){
     main h1{
         font-size: 28px;
     }
@@ -168,5 +161,28 @@ h1{
     }
     .dato input{
         height: 25px;
+    }
+}
+@media (max-width: 457px){
+    main h1{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    main>p{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .checks{
+        margin-right: 140px;
+    }
+}
+@media (max-width: 375px){
+    .checks{
+        margin-right: 125px;
+    }
+}
+@media (max-width: 360px){
+    .checks{
+        margin: 0;
     }
 }
