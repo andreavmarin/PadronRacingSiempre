@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+:root{
+    --color1: #00a4e3;
+    --color2: #428bca;
+    --color3: #ffffff;
+    --color-input: #ffffff29;
+    --font: 'Roboto', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url(img/background5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--color3);
+    font-family: var(--font);
+
+ 
+}
+body::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(5, 5, 5, 0.644);
+}
+.logo>img{
+    width: 150px;
+
+}
+.logo{
+    margin: 15px;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: -50px;
+}
+main>p{
+    font-weight: 600;
+    margin: 5px;
+}
+
+h1{
+    color: var(--color1);
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.redes{
+    margin-left: 3%;
+}
+.redes a img{
+    width: 30px;
+}
+
+.checks{
+    display: flex;
+    flex-direction: column;
+    margin-right: 213px;
+}
+.check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    width: 275px;
+    margin: 2px;
+    cursor: pointer;
+}
+.datos{
+    margin-top: 15px;
+}
+.dato{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+/* .dato label{
+    width: 50%;
+} */
+.dato input{
+    background: var(--color-input);
+    margin:9px;
+    width: 250px;
+    height: 25px;
+    border: none;
+    border-bottom: 3px solid var(--color2);
+    padding-left: 10px;
+}
+.dato input:focus{
+    background: var(--color-input);
+    outline: none;
+    border-bottom: 3px solid var(--color2);
+}
+.dato input::placeholder{
+    font-size: 16px;
+    color: #ffffff99;
+
+}
+.button-caja{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 5px;
+
+}
+.button{
+    background-color: #080808;
+    color: #ffffff;
+    border: 1px solid var(--color2);
+    padding: 10px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+@media (max-width: 920px){
+    .logo img{
+        width: 125px;
+    }
+    .redes a img{
+        width: 24px;
+    }
+    .redes{
+        margin-left: 4%;
+    }
+    main h1{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 800px){
+    main{
+        margin-top: 0;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redes{
+        margin:0;
+    }
+}
+@media (max-width: 600px){
+    main h1{
+        font-size: 28px;
+    }
+    main>p{
+        font-size: 18px;
+    }
+    .check label{
+        font-size: 15px;
+    }
+    .check{
+        width: 220px;
+    }
+    .dato input{
+        height: 25px;
+    }
+}
