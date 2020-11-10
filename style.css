@@ -29,7 +29,6 @@ body::before {
     left: 0;
     right: 0;
     background: rgba(5, 5, 5, 0.644);
-    background-attachment: fixed;
 }
 .logo>img{
     width: 150px;
@@ -165,7 +164,7 @@ h1{
     .dato input{
         height: 25px;
     }
-    /* .redes a img{
+    .redes a img{
         width: 15px;
     }
     .logo img{
@@ -173,15 +172,14 @@ h1{
     }
     .logo{
         margin: 0;
+        margin-top: 10px;
     }
     main h1{
         margin-bottom: 10px;
-    } */
+        font-size: 23px;
+    }
 }
 @media (max-width: 457px){
-    main h1{
-        font-size: 25px;
-    }
     main>p{
         font-size: 15px;
         margin-left: 10px;
