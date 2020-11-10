@@ -181,6 +181,9 @@ h1{
     .button-caja .button{
         padding: 5px;
     }
+    body{
+        overflow: hidden;
+    }
 }
 @media (max-width: 457px){
     main>p{
