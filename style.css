@@ -170,11 +170,16 @@ h1{
     .logo img{
         width: 80px;
     }
+    .logo{
+        margin: 0;
+    }
+    main h1{
+        margin-bottom: 10px;
+    }
 }
 @media (max-width: 457px){
     main h1{
         font-size: 25px;
-        margin-bottom: 15px;
     }
     main>p{
         font-size: 15px;
