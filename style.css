@@ -186,3 +186,8 @@ h1{
         margin: 0;
     }
 }
+@media(max-height: 350px){
+    .logo{
+        display: none;
+    }
+} 
