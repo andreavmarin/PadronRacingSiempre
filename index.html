@@ -51,6 +51,12 @@
             document.getElementById("nro").placeholder = "Ingrese el número de DNI";
     }
 });
+        var checkbox2 = document.getElementById('nroSocio');
+    checkbox2.addEventListener( 'change', function() {
+        if(this.checked) {
+            document.getElementById("nro").placeholder = "Ingrese el número de socio";
+    }
+});
     </script>
 </body>
 </html>
