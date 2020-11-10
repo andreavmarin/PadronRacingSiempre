@@ -95,6 +95,7 @@ h1{
     border: none;
     border-bottom: 3px solid var(--color2);
     padding-left: 10px;
+    color: white;
 }
 .dato input:focus{
     background: var(--color-input);
@@ -162,6 +163,12 @@ h1{
     }
     .dato input{
         height: 25px;
+    }
+    .redes a img{
+        width: 15px;
+    }
+    .logo img{
+        width: 80px;
     }
 }
 @media (max-width: 457px){
