@@ -28,7 +28,7 @@ body::before {
     left: 0;
     right: 0;
     background: rgba(5, 5, 5, 0.644);
-    width:100%;
+    width:200%;
     height:200%;
 } 
 .logo>img{
