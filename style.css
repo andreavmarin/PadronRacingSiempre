@@ -208,4 +208,24 @@ h1{
     .logo{
         display: none;
     }
+    main h1{
+        font-size: 19px;
+    }
+    main p{
+        font-size: 12px;
+    }
+    .check label{
+        font-size: 12px;
+        margin-left: 50px;
+    }
+    .dato input{
+        height: 19px;
+        margin: 3px;
+    }
+    .dato input::placeholder{
+        font-size: 14px;
+    }
+    .button-caja .button{
+        padding: 3px;
+    }
 } 
