@@ -38,7 +38,7 @@
     <main>
         <h1>Consulta de Padrón</h1>
         <p>Por favor ingrese número de socio o DNI para verificar</p>
-        <form action="">
+        <form id="formulario" action="">
             <div class="checks">
                 <div class="check">
                     <label for="nroSocio">Buscar por número de socio</label>
@@ -52,14 +52,14 @@
             <div class="datos">
                 <div class="dato">
                     <!-- <label for="nro">Ingrese el número de socio/DNI</label> -->
-                    <input type="text" id="nro" placeholder="Ingrese el número de socio" name="">
+                    <input type="text" id="nro" required placeholder="Ingrese el número de socio" name="">
                 </div>
                 <div class="dato">
                     <!-- <label for="email">Ingrese su e-mail</label> -->
                     <input type="email" id="email" id="nroSocio" placeholder="Ingrese su e-mail" name="">
                 </div>  
                 <div class="button-caja">
-                    <input type="button" class="button" value="Consultar">
+                    <input type="submit" class="button" value="Consultar">
                 </div>
             </div>
         </form>
@@ -77,6 +77,25 @@
             document.getElementById("nro").placeholder = "Ingrese el número de socio";
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("formulario").addEventListener('submit', validarFormulario); 
+});
+
+function validarFormulario(evento) {
+  evento.preventDefault();
+  var usuario = document.getElementById('email').value;
+  if(usuario.length == "@") {
+    alert('No has escrito un email válido');
+    return;
+  }
+  var clave = document.getElementById('nro').value;
+  if (clave.length < 6) {
+    alert('EL número ingresado no es válido');
+    return;
+  }
+  this.submit();
+}
     </script>
 </body>
 </html>
