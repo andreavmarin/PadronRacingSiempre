@@ -24,7 +24,7 @@ body {
     font-family: var(--font);
 
 }
-body::before {
+/* body::before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -35,7 +35,7 @@ body::before {
     background: rgba(5, 5, 5, 0.644);
     width:200%;
     height:200%;
-} 
+}  */
 .logo>img{
     width: 150px;
 
