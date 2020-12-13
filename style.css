@@ -228,31 +228,3 @@ h1{
         margin-left: 150px;
     }
 }
-@media(max-height: 350px){
-    .logo{
-        display: none;
-    }
-    main h1{
-        font-size: 19px;
-    }
-    main p{
-        font-size: 12px;
-    }
-    .check label{
-        font-size: 12px;
-    }
-    .checks{
-        margin: 0;
-        margin-left: 125px;
-    }
-    .dato input{
-        height: 19px;
-        margin: 3px;
-    }
-    .dato input::placeholder{
-        font-size: 14px;
-    }
-    .button-caja .button{
-        padding: 3px;
-    }
-} 
