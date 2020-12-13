@@ -72,15 +72,14 @@ h1{
 .checks{
     display: flex;
     flex-direction: column;
-    margin-right: 210px;
 }
 .check{
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    width: 275px;
-    margin: 2px;
     cursor: pointer;
+    width: 350px;
+    margin: 2px 0;
 }
 .datos{
     margin-top: 15px;
@@ -131,7 +130,6 @@ h1{
     cursor: pointer;
     margin: 10px;
 }
-
 @media (max-width: 920px){
     .logo img{
         width: 125px;
@@ -166,7 +164,12 @@ h1{
     .check label{
         margin: 5px 0 0;
     }
-
+    .leyenda-form{
+        margin: 0 15px;
+    }
+    .check{
+        width: 300px;
+    }
 }
 @media (max-width: 630px){
     main h1{
@@ -177,9 +180,6 @@ h1{
     }
     .check label{
         font-size: 18px;
-    }
-    .check{
-        width: 250px;
     }
     .dato input{
         height: 25px;
@@ -205,26 +205,24 @@ h1{
     body{
         overflow: hidden;
     }
+    .checks{
+        margin-top: 20px;
+    }
 }
 @media (max-width: 457px){
     main>p{
         font-size: 18px;
         margin-left: 20px;
     }
-    .checks{
-        margin-left: 90px;
-    }
     .logo{
         margin-top: -120px;
     }
-}
-@media (max-width: 375px){
-    .checks{
-        margin-left: 130px;
+    .leyenda-form{
+        margin-left: 20px;
     }
-}
-@media (max-width: 360px){
-    .checks{
-        margin-left: 150px;
+    .check{
+        width: 270px;
     }
+
 }
+
