@@ -200,13 +200,6 @@ h1{
     .checks{
         margin-right: 140px;
     }
-    .body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-    }
 }
 @media (max-width: 375px){
     .checks{
@@ -218,28 +211,3 @@ h1{
         margin: 0;
     }
 }
-@media(max-height: 350px){
-    .logo{
-        display: none;
-    }
-    main h1{
-        font-size: 19px;
-    }
-    main p{
-        font-size: 12px;
-    }
-    .check label{
-        font-size: 12px;
-        margin-left: 50px;
-    }
-    .dato input{
-        height: 19px;
-        margin: 3px;
-    }
-    .dato input::placeholder{
-        font-size: 14px;
-    }
-    .button-caja .button{
-        padding: 3px;
-    }
-} 
