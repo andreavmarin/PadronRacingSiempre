@@ -214,6 +214,9 @@ h1{
     .checks{
         margin-left: 90px;
     }
+    .logo{
+        margin-top: -120px;
+    }
 }
 @media (max-width: 375px){
     .checks{
